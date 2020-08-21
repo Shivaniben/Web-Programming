@@ -1,0 +1,215 @@
+/* CSS Document */
+
+/* CSS Reset */
+
+
+/* Universal Selector*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*Attribute Selector*/
+img[alt*="Shi"]{
+	color: deeppink;
+}
+/*ID Selector*/
+#top {
+	background-color: #ff5733;
+	margin-top: 20px;
+	padding-top: 10px;
+	border: grey  1px;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*Type Selector*/
+fieldset{
+margin-top: 5px;
+background-color: #ccadbe;
+
+}
+
+
+/*Type Selector*/
+legend{
+	color: #1f253d;
+	background-color: #ccadbe;
+	border: 1px solid#200772;
+	padding: 2px;
+	font-weight: bold;
+}
+
+/*Type Selector*/
+table{
+	margin: 5px;
+	padding: 5px;
+}
+
+/*Type Selector*/
+td{
+	padding: 3px;
+}
+
+
+/*Class Selector*/
+.required{
+	color: #FF0000;
+}
+
+/*ID Selector*/
+#data{
+	padding-left: 10px;
+}
+
+
+/**********************************CSS for index,html**************************/
+
+
+
+.navbar {
+	width: 100%;
+	background-color: 
+	#555;
+	overflow: hidden;
+	height: 40px;
+	
+  }
+  
+  /* Navbar links */
+  .navbar a {
+	  float: left;
+	  display: block;
+	  text-align: center;
+	  padding: 8px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+   
+	;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+	background-color: #000;
+	
+  }
+  
+  /* Current/active navbar link */
+  .active {
+	background-color:   #4CAF50;
+	height:25px;
+  }
+  .menu{
+	display: inline-block;
+	position: relative;
+	
+   
+  }
+  
+  
+  
+  
+	
+	.submenu {
+	  text-align: center;
+	  display: none;
+	  position: fixed;
+	  background-color:#f28d8d;
+	  min-width: 112px;
+	  opacity: 0.9;;
+	  margin-top: 40px;
+	 margin-right:99.5px;
+	
+	}
+	
+	.submenu a {
+	  text-align: center;
+	  float:none;
+	  color: black;
+	 
+	  text-decoration:none;
+	  display: block;
+	  padding: 10px 14px;
+	  
+	}
+  
+	
+	
+	.submenu a:hover {background-color:mediumaquamarine;}
+	
+	.menu:hover .submenu {
+	  position: fixed;
+		display:block
+	  }
+
+	  .purpose {
+		  color: rgb(255, 0, 0);
+		  padding: 15px;
+		  font-size:25px;
+		  margin-top: 20px;
+	  }
+  
+	  /*FILTER LIST FORMATTING*/
+  
+  #myInput {
+	background-position: 10px 12px; 
+	background-repeat: no-repeat;
+	background-color:#abeded;
+	width: 96%;
+	font-size: 16px;
+	padding: 12px 20px 12px 40px;
+	border: 1px solid black;
+	margin-bottom: 25px;
+	margin-top: 160px;
+	flex: 35%;
+  }
+
+  #myInput input[type=text] {
+	float: left;
+	padding: 6px;
+	margin-top: 8px;
+	margin-right: 16px;
+	border: none;
+	font-size: 17px;
+  }
+
+
+   
+  #myOL {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #myOL li a {
+	border: 1px solid #ddd;
+	margin-top: -1px;
+	background-color: #f6f6f6;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	display: block;
+  }
+  
+  #myOL li a:hover:not(.header) {
+	background-color:pink;
+  }
+  
+  #Welcome {
+	color: red;
+	font-weight: bold;
+	position:absolute;
+	top:230px;
+	left: 16px;
+	font-size: 30px;
+  }
+  
+  
+
+  
+  

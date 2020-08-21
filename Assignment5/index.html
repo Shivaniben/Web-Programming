@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" >
+    <link rel="stylesheet" href="style.css" > 
+   
+    <title> Menu Bar</title>
+    <meta charset="utf-8">
+    </head>
+    <body>
+        
+        
+           
+          <div class="navbar">
+            
+            <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+            
+            <div class="menu">
+            
+           <a href="#"><i class="fa fa-fw fa-search"></i> Product</a>
+            
+            <div class="submenu" >
+                
+                <a>Product 1</a>
+                <a>Product 2</a>
+                
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+            <div class = "submenu">
+               
+                <a href="contact.html">Contact Us <i class=" flag-icon flag-icon-us"></i></a>
+                <a href="contact.html">Contactez-nous <i class=" flag-icon flag-icon-fr"></i></a>
+            
+            </div>
+
+        </div>
+      
+      
+           <a href="aboutme.html"><i class="fa fa-fw fa-user"></i>About Me</a>
+
+        
+          </div>
+          <div class="purpose">
+            <h4><strong>This site giving clients the insights concerning various models of vehicles of an 
+              alternate organization and give them best proposal with respect to purchasing vehicle based 
+              on the brand they select .You can look through any brand of vehicle in the beneath given pursuit bar. 
+              You can likewise send us your detail by submitting structure in the contact segment .</strong></h4>
+          </div>
+        
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for car making brand's name starting with alphabets A-E..">
+
+          <ol id="myOL">
+            <li><a href="#">Acura</a></li>
+            <li><a href="#">Alfa Romeo </a></li>
+            <li><a href="#">Aston Martin</a></li>
+            <li><a href="#">Audi</a></li>
+            <li><a href="#">Bentley</a></li>
+            <li><a href="#">BMW</a></li>
+            <li><a href="#">Buggati</a></li>
+            <li><a href="#">Buick</a></li>
+            <li><a href="#">Cadillac</a></li>
+            <li><a href="#">Chevrolet</a></li>
+          
+            <li><a href="#">Chrysler</a></li>
+            <li><a href="#">Dodge</a></li>
+            <li><a href="#">Ferrari</a></li>
+            <li><a href="#">Fiat</a></li>
+            <li><a href="#">Ford</a></li>
+            <li><a href="#">Geely</a></li>
+            <li><a href="#">General Motors</a></li>
+            <li><a href="#">GMC</a></li>
+            <li><a href="#">Honda</a></li>
+            <li><a href="#">Hyundai</a></li>
+          
+            <li><a href="#">Infiniti</a></li>
+            <li><a href="#">jaguar</a></li>
+            <li><a href="#">Jeep</a></li>
+            <li><a href="#">Kia</a></li>
+            <li><a href="#">Koenigsegg</a></li>
+            <li><a href="#">Lamborghini</a></li>
+            <li><a href="#">Land Rover</a></li>
+            <li><a href="#">Lexus</a></li>
+            <li><a href="#">Maserati</a></li>
+            <li><a href="#">Mazda</a></li>
+          
+            <li><a href="#">McLaren</a></li>
+            <li><a href="#">Mercedes-Benz</a></li>
+            <li><a href="#">Mini</a></li>
+            <li><a href="#">Mitsubishi</a></li>
+            <li><a href="#">Pagani</a></li>
+            <li><a href="#">Peugeot</a></li>
+            <li><a href="#">Porsche</a></li>
+            <li><a href="#">Nissan </a></li>
+            <li><a href="#">Ram</a></li>
+            <li><a href="#">Renault</a></li>
+          
+            <li><a href="#">Rolls Royace</a></li>
+            <li><a href="#">Saab </a></li>
+            <li><a href="#">Subaru</a></li>
+            <li><a href="#">Suzuki</a></li>
+            <li><a href="#">Tata Motors</a></li>
+            <li><a href="#">Tesla</a></li>
+            <li><a href="#">Toyota</a></li>
+            <li><a href="#">Volkswagen</a></li>
+            <li><a href="#">Volvo</a></li>
+           
+          </ol>
+          
+          <script>
+            function myFunction() {
+    // Declare variables
+    var input, filter, ol, li, a, i, txtValue;
+
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ol = document.getElementById("myOL");
+    li = ol.getElementsByTagName("li");
+
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1 && filter != "") {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+
+    }
+  }
+window.onload = myFunction;
+</script>
+
+<label id="Welcome"></label>
+<script>
+  var date = new Date();
+  var hour = date.getHours();
+
+  var message;
+
+  if (hour >= 0 && hour < 6)
+      message = 'Good morning, you must be an early bird!';
+  else if (hour >= 6 && hour < 12)
+      message = 'Good Morning';
+  else if (hour >= 12 && hour < 18)
+      message = 'Good Afternoon';
+  else if (hour >= 18 && hour <= 23)
+      message = 'Good Evening';
+  document.getElementById('Welcome').innerHTML =
+      '<b>' + message + '</b>';
+          </script>
+          
+
+
+        
+        </body>
+</html>
